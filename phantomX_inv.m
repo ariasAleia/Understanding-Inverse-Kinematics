@@ -17,8 +17,8 @@ ws = [-50 50];
 %%PhantomX.teach()
 
 %%
-qt = deg2rad([30, 45, 0, 56]);
-%qt = deg2rad([[60, -70, 20, 15]]);
+qt = deg2rad([30, 45, 0, 56]);% con este q las matrices dan diferente a la original
+%qt = deg2rad([60, -70, 20, 15]); % con este q todas las matrices dan lo mismo
 Tt = PhantomX.fkine(qt) %Matriz original. En teoría todas las que obtengamos deberían ser iguales a esta
 %%
 my_q = invKinPhantom(Tt, l);
