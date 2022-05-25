@@ -67,4 +67,6 @@ def getInvKin(T, l):
     print("2: ", q[1,1])
     print("3: ", q[1,2])
     print("4: ", q[1,3])
+    
+    return q
 
